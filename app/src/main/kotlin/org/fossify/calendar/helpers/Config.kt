@@ -336,4 +336,15 @@ class Config(context: Context) : BaseConfig(context) {
     var widgetShowGrid: Boolean
         get() = prefs.getBoolean(WIDGET_SHOW_GRID, false)
         set(widgetShowGrid) = prefs.edit().putBoolean(WIDGET_SHOW_GRID, widgetShowGrid).apply()
+
+    fun getCountdownWidgetEventId(widgetId: Int): Long =
+        prefs.getLong("$COUNTDOWN_WIDGET_EVENT_ID-$widgetId", -1L)
+
+    fun saveCountdownWidgetEventId(widgetId: Int, eventId: Long) {
+        prefs.edit().putLong("$COUNTDOWN_WIDGET_EVENT_ID-$widgetId", eventId).apply()
+    }
+
+    fun removeCountdownWidgetEventId(widgetId: Int) {
+        prefs.edit().remove("$COUNTDOWN_WIDGET_EVENT_ID-$widgetId").apply()
+    }
 }

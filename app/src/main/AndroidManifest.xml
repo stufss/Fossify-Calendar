@@ -132,6 +132,16 @@
         </activity>
 
         <activity
+            android:name=".activities.WidgetCountdownConfigureActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyWidgetConfigTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name="org.fossify.commons.activities.AboutActivity"
             android:configChanges="orientation"
             android:exported="false"
@@ -266,6 +276,20 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_date_info" />
+        </receiver>
+
+        <receiver
+            android:name=".helpers.MyWidgetCountdownProvider"
+            android:exported="true"
+            android:icon="@drawable/img_widget_date_preview"
+            android:label="@string/widget_countdown">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_countdown_info" />
         </receiver>
 
         <service

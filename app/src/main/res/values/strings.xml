@@ -16,6 +16,20 @@
     <string name="widget_monthly">Calendar monthly</string>
     <string name="widget_list">Calendar event list</string>
     <string name="widget_todays_date">Calendar today\'s date</string>
+    <string name="widget_countdown">Calendar event countdown</string>
+
+    <!-- Countdown widget -->
+    <string name="select_countdown_event">Select event</string>
+    <string name="change_event">Change event</string>
+    <string name="tap_to_select_event">Tap to select an event</string>
+    <string name="no_events_found">No upcoming events found</string>
+    <string name="countdown_today">Today</string>
+    <string name="countdown_tomorrow">Tomorrow</string>
+    <string name="countdown_event_passed">Event has passed</string>
+    <plurals name="countdown_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
 
     <!-- Event -->
     <string name="event">Event</string>

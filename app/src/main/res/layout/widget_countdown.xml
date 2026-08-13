@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_countdown_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/widget_countdown_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/widget_round_background"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/widget_countdown_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/widget_countdown_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="60sp"
+            android:autoSizeMinTextSize="2sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/md_grey_white"
+            android:textSize="16sp"
+            tools:text="Anna's Birthday" />
+
+        <TextView
+            android:id="@+id/widget_countdown_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autoSizeMaxTextSize="200sp"
+            android:autoSizeMinTextSize="2sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_grey_white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/widget_countdown_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="2sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_grey_white"
+            android:textSize="14sp"
+            tools:text="days left" />
+
+    </LinearLayout>
+</RelativeLayout>
