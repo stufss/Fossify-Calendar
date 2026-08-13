@@ -90,7 +90,7 @@ class MyWidgetCountdownProvider : AppWidgetProvider() {
         val daysLabel = when (daysLeft) {
             0 -> context.getString(R.string.countdown_today)
             1 -> context.getString(R.string.countdown_tomorrow)
-            else -> context.resources.getQuantityString(R.plurals.countdown_days_left, daysLeft, daysLeft)
+            else -> context.resources.getQuantityString(R.plurals.countdown_days_left, daysLeft)
         }
 
         return RemoteViews(context.packageName, R.layout.widget_countdown).apply {

@@ -27,8 +27,8 @@
     <string name="countdown_tomorrow">Tomorrow</string>
     <string name="countdown_event_passed">Event has passed</string>
     <plurals name="countdown_days_left">
-        <item quantity="one">%d day left</item>
-        <item quantity="other">%d days left</item>
+        <item quantity="one">day left</item>
+        <item quantity="other">days left</item>
     </plurals>
 
     <!-- Event -->

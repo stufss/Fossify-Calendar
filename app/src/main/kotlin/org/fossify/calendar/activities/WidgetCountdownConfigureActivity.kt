@@ -178,7 +178,7 @@ class WidgetCountdownConfigureActivity : SimpleActivity() {
                     }
                     else -> {
                         widgetCountdownDaysLabel.text = daysLeft.toString()
-                        widgetCountdownLabelLabel.text = resources.getQuantityString(R.plurals.countdown_days_left, daysLeft, daysLeft)
+                        widgetCountdownLabelLabel.text = resources.getQuantityString(R.plurals.countdown_days_left, daysLeft)
                     }
                 }
             }
